@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      #text {
+        color: rebeccapurple !important;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="mystyle.css" /> -->
+  </head>
+  <body>
+    <!--
+        스타일 우선순위?
+
+        1. 명시도 점수가 높은 선언이 우선이다.
+            명시도점수란? (!important(1000)> 인라인(500)>아이디(100)>클래스(10)>태그(1)>전체>상속)
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선된다.
+        3. 명시도는 상속규칙보다 우선이다.
+        4. !important가 적용된 선언 방식이 다른 모든 방식보다 우선한다.
+    .list li.item{color:red;}
+    .list li:hover{} //가상선택자랑 저거랑 점수가 똑같은ㅁ 똑같이 10점정도?
+    :not 같은 경우는? :not(.box){} <-태그가올수도있는데,not 자체엔 점수가 없다.. 그안에있는걸로 먹일수있는거임
+    -->
+    <!--인라인 방식 
+    <h1 style="color: tomato">헤딩태그</h1>-->
+
+    <div class="area">
+      <p id="text" style="color: orange">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit officiis
+        nam voluptatum laborum nostrum pariatur, consequatur explicabo
+        consequuntur soluta praesentium dolorem, quas voluptas vel laboriosam
+        saepe odio sint dolore nisi.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2:first-of-type {
+        /*첫번째로 나오는 h2에게 속성을 부여해줄게*/
+        color: red;
+      }
+      h3:last-of-type {
+        color: blue;
+      }
+      h4:nth-last-of-type(2) {
+        /*마지막에서 n번째로 나오는거한테 속성을 부여해줄게*/
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css 선택자(중요 - 자바스크립트에서도 사용) 
+         1.  태그 선택자 : 태그명을 기준으로 설정(가장 쉬움) 
+         2.  전체 선택자 : body안 모든 태그를 의미(*)
+         3.  클래스 선택자 : 지정된 클래스명을 가지고 있는 태그를 지정
+         4.  아이디 선택자 : 지정된 아이디명을 가지고 있는 태그를 지정
+         5.  자손(하위) 선택자 : 자손 태그를 지정(공백)
+         6.  자식 선택자 : 자식 태그를 지정( > )
+         7.  형제 선택자 : 형제 태그를 지정( + or ~ )
+         8.  속성 선택자 : 속성 값을 가지고 있는 태그를 지정( [속성] )
+         9.  가상 클래스 선택자:
+         10. 가상 요소 선택자:  ::befor, ::after
+         11. 구조 선택자 :  요소:first-child, 요소: last-child  요소:nth-child(3)
+         12. 형태 구조 선택자: 요소: first-of-type, 요소:last-of-type
+         요소:nth-last-of-type 뭐 이런식으로도 올 수 있다는거임 !-->
+    <h1 id="title">css 기본문법</h1>
+    <h2>형태 구조 선택자</h2>
+    <ul>
+      <li>리스트 아이템1</li>
+      <li>리스트 아이템2</li>
+      <li>리스트 아이템3</li>
+      <li>리스트 아이템4</li>
+      <li>리스트 아이템5</li>
+      <li>리스트 아이템6</li>
+      <li>리스트 아이템7</li>
+      <li>리스트 아이템8</li>
+    </ul>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <ul class="fruit">
+      <div>딸기</div>
+      <p>사과</p>
+      <p>오렌지</p>
+      <span>망고</span>
+    </ul>
+  </body>
+</html>
